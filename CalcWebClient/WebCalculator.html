@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link href="style/style.css" rel="stylesheet">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <form name="calc" id="calculator">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" id="aTxt" />
+                    <input type="button" name="clear" value="c" OnClick="calc.aTxt.value = ''">
+                    <p>
+                </td>
+            </tr>
+            <tr>
+                <td class="buttons">
+                    <input type="button" id="btn7" value="7" onclick="fNum(this)" />
+                    <input type="button" id="btn8" value="8" onclick="fNum(this)" />
+                    <input type="button" id="btn9" value="9" onclick="fNum(this)" />
+                    <input type="button" id="btnPlus" value="+" onclick="fOp(this)" />
+                    <br>
+                    <input type="button" id="btn4" value="4" onclick="fNum(this)" />
+                    <input type="button" id="btn5" value="5" onclick="fNum(this)" />
+                    <input type="button" id="btn6" value="6" onclick="fNum(this)" />
+                    <input type="button" id="btnMinus" value="-" onclick="fOp(this)" />
+                    <br>
+                    <input type="button" id="btn1" value="1" onclick="fNum(this)" />
+                    <input type="button" id="btn2" value="2" onclick="fNum(this)" />
+                    <input type="button" id="btn3" value="3" onclick="fNum(this)" />
+                    <input type="button" id="btnMult" value="*" onclick="fOp(this)" />
+                    <br>
+                    <input type="button" id="btnDot" value="," onclick="fNum(this)">
+                    <input type="button" id="btn0" value="0" onclick="fNum(this)" />
+                    <input type="button" id="btnEq" value="=" onclick="fOp(this)" />
+                    <input type="button" id="btnDiv" value="/" onclick="fOp(this)" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
