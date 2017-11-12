@@ -8,7 +8,7 @@ namespace CalcWebClient
    {   
         static void Main(string[] main)
         {
-            Process.Start("..\\..\\WebCalculator.html"); 
+            Process.Start("chrome.exe", "..\\..\\WebCalculator.html"); 
         }
     }
 }
