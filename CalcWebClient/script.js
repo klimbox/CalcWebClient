@@ -21,7 +21,7 @@ function calcN(a, b, op) {
     if (op === "+") { op = "plus"; }
     var req = "num1=" + a + "&num2=" + b + "&opr=" + op;
     var rr = new XMLHttpRequest();
-    rr.open('GET', 'http://localhost:8080/?' + req, false);
+    rr.open('GET', 'http://localhost:8370/?' + req, false);
     rr.send(null);
     if (rr.status == 200)
         return rr.responseText;
