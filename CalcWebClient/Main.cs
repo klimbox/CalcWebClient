@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using System.IO;
+
 
 namespace CalcWebClient
 {
-   static class Mainn
+    static class Program
    {   
         static void Main(string[] main)
-        {  
-            Process.Start("file:///D:/Client%20Web/CalcWebClient/CalcWebClient/WebCalculator.html"); 
+        {
+            Process.Start("..\\..\\WebCalculator.html"); 
         }
     }
 }
